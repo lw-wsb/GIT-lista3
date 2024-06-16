@@ -29,3 +29,6 @@ Skrypt w Pythonie do automatycznego testowania różnych endpointów API przy u�
 
 Po uruchomieniu skryptu wyniki będą wyglądać następująco:
 
+Test 1: PASSED
+Test 2: PASSED
+Test 3: PASSED
