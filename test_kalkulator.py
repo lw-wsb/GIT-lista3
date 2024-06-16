@@ -1,29 +1,29 @@
 import unittest
-from calculator import add, subtract, multiply, divide
+from kalkulator import dodawanie, dzielenie, mnozenie, odejmowanie
 
 class TestCalculator(unittest.TestCase):
 
     def test_dodawanie(self):
-        self.assertEqual(add(2, 3), 5)
-        self.assertEqual(add(-1, 1), 0)
-        self.assertEqual(add(-1, -1), -2)
+        self.assertEqual(dodawanie(2, 3), 5)
+        self.assertEqual(dodawanie(-1, 1), 0)
+        self.assertEqual(dodawanie(-1, -1), -2)
 
     def test_odejmowanie(self):
-        self.assertEqual(subtract(10, 5), 5)
-        self.assertEqual(subtract(-1, 1), -2)
-        self.assertEqual(subtract(-1, -1), 0)
+        self.assertEqual(odejmowanie(10, 5), 5)
+        self.assertEqual(odejmowanie(-1, 1), -2)
+        self.assertEqual(odejmowanie(-1, -1), 0)
 
     def test_mnozenie(self):
-        self.assertEqual(multiply(3, 7), 21)
-        self.assertEqual(multiply(-1, 1), -1)
-        self.assertEqual(multiply(-1, -1), 1)
+        self.assertEqual(mnozenie(3, 7), 21)
+        self.assertEqual(mnozenie(-1, 1), -1)
+        self.assertEqual(mnozenie(-1, -1), 1)
 
     def test_dzielenie(self):
-        self.assertEqual(divide(10, 2), 5)
-        self.assertEqual(divide(-1, 1), -1)
-        self.assertEqual(divide(-1, -1), 1)
+        self.assertEqual(dzielenie(10, 2), 5)
+        self.assertEqual(dzielenie(-1, 1), -1)
+        self.assertEqual(dzielenie(-1, -1), 1)
         with self.assertRaises(ValueError):
-            divide(10, 0)
+            dzielenie(10, 0)
 
 if __name__ == '__main__':
     unittest.main()

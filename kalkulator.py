@@ -13,4 +13,8 @@ def dzielenie(a, b):
     return a / b
 
 if __name__ == "__main__":
-    print("start")
+    print("Testowanie")
+    print(dodawanie(5, 5))
+    print(odejmowanie(10, 2))
+    print(mnozenie(50, 3))
+    print(dzielenie(25, 5))
