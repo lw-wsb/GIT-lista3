@@ -43,7 +43,12 @@ Prosty kalkulator napisany w Pythonie z funkcjami dodawania, odejmowania, mnoże
 - `Makefile`: Plik Makefile do automatyzacji procesów instalacji, testowania i uruchamiania aplikacji
 - `requirements.txt`: Plik z listą zależności (na potrzeby przykładu może być pusty lub zawierać `unittest`)
 
-## Instalacja zależności
-Aby zainstalować wszystkie zależności, uruchom:
-```sh
-make install
+## Makefile
+Komendy:
+<ol>
+    <li>make install - instalacja bibliotek</li>
+    <li>make test - uruchomienie testów</li>
+    <li>make run - uruchamianie aplikacji</li>
+</ol>
+
+
